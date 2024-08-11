@@ -1,6 +1,6 @@
 <html><head>
     <!-- Google tag (gtag.js) --> <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-W50QFDLDLX"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W50QFDLDLX'); </script><meta charset="utf-8">
-    <title>我喜欢你</title>
+    <title>好きです</title>
     <!-- style -->
     <link type="text/css" rel="stylesheet" href="css/theme.css">
     <script src="js/jquery-2.0.3.min.js"></script>
@@ -29,12 +29,12 @@
     <div id="div_container">
         <!-- 最外层div，用于居中兼容PC和移动 -->
         <div id="div_start_bg"></div>
-        <div id="div_onlyyou" style="display: block; height: 955px; background-image: url(&quot;/images/3.jpg&quot;);">
+        <div id="div_onlyyou" >
             <!-- 用于设置背景 -->
-            <div id="div_oy_inner" style="height: 955px;">
+            <div id="div_oy_inner" style="height: 1066px;">
                 <!-- 用于存放content -->
                 <div class="div_oy_text">
-                    <h1>做我女朋友好不好💕<um style="color: #F44336;">💕</um></h1>
+                    <h1>今夜は月が绮丽ですね💕<um style="color: #F44336;">💕</um></h1>
                     <img class="img_oy_text" src="images/1.gif">
                     <p class="p_oy_text">承蒙你的出现，够我喜欢好多年，我希望，以后你能用我的名字拒绝所有人💕<um style="color: #F44336;">💕</um></p>
                     <ul id="ul_oy_benefit">
@@ -99,16 +99,16 @@
             var version = parseFloat(RegExp.$1);
             if (version > 2.3) {
                 var width = window.outerWidth == 0 ? window.screen.width : window.outerWidth;
-                var phoneScale = parseInt(width) / 500;
-                document.write('<meta name="viewport" content="width=500, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+                var phoneScale = parseInt(width) / 600;
+                document.write('<meta name="viewport" content="width=600, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
             } else {
-                document.write('<meta name="viewport" content="width=500, target-densitydpi=device-dpi, user-scalable=0">');
+                document.write('<meta name="viewport" content="width=600, target-densitydpi=device-dpi, user-scalable=0">');
             }
         } else if (navigator.userAgent.indexOf('iPhone') != -1) {
-            var phoneScale = parseInt(window.screen.width) / 500;
-            document.write('<meta name="viewport" content="width=500, min-height=750, initial-scale=' + phoneScale + ', maximum-scale=' + phoneScale + ', user-scalable=0" /> '); //0.75   0.82
+            var phoneScale = parseInt(window.screen.width) / 600;
+            document.write('<meta name="viewport" content="width=600, min-height=1066, initial-scale=' + phoneScale + ', maximum-scale=' + phoneScale + ', user-scalable=0" /> '); //0.75   0.82
         } else {
-            document.write('<meta name="viewport" content="width=500, height=750, initial-scale=0.64" /> '); //0.75  0.82
+            document.write('<meta name="viewport" content="width=600, height=1066, initial-scale=0.64" /> '); //0.75  0.82
         }
     }
     init_viewport();
@@ -120,20 +120,13 @@
         "typed_bool": "typed_y",
         "cursor_char": "cursor_heart",
         "bg_style_pure_words": "bg_opacity",
-        "bg_img": "images/3.jpg",
+        "bg_img": "images/bg.jpeg",
         "simple_page_content": "",
         "video_page_content": ""
     };
     console.log(theme_content);
     
-    var music_json = {
-        "music_select": "m_online",
-        "m_online_id": "7",
-        "m_online_url": "/music/7a2b082b0b.mp3",
-        "m_upload_name": "null",
-        "m_upload_url": "null"
-    };
-    console.log(music_json);
+
     var record_json = {
         "record_bool": "r_false",
         "r_wechat_time": "null",
@@ -238,11 +231,11 @@
         init_attachment();
     }
     var start_content = {
-        chase_title: "做我女朋友好不好💕<um style='color: #F44336;'>💕</um>",
+        chase_title: "今夜は月が绮丽ですね💕<um style='color: #F44336;'>💕</um>",
         chase_text: "承蒙你的出现，够我喜欢好多年，我希望，以后你能用我的名字拒绝所有人💕<um style='color: #F44336;'>💕</um>",
-        chase_benefit: ["你是我拔掉氧气罐都想吻的人", "你是我跑完8000米还想拥抱的人", "你是我自罚三杯都不肯开口的秘密", "你是我赴汤蹈火都不肯放下的执着", "你是我电量只剩1%也想回信息的人", "你是我穷极一生不想醒来的梦"],
+        chase_benefit: ["好きです", "我喜欢你", "付き合ってください", "我们在一起吧", "今夜は月が绮丽ですね","因为有你在,月亮才格外美丽"," 我不需要看遍世界的每一个角落", "因为我的世界已在你的笑容中完美展开"],
         bg_style: "bg_custom",
-        bg_img: "images/3.jpg",
+        bg_img: "images/bg.jpeg",
         img_bool: "img_true",
         img_src: "images/1.gif"
     }; //可能为null
@@ -306,7 +299,7 @@
             return;
         }
     }
-    </script><meta name="viewport" content="width=500, height=750, initial-scale=0.64"> 
+    </script><meta name="viewport" content="width=600, height=1066, initial-scale=0.64"> 
     <!-- JQuery -->
     <script src="js/typed.min.js"></script>
     <script src="js/start_onlyyou.js"></script>
